@@ -80,7 +80,7 @@ function filter(array, callback){
     map(array, function(element){
         if(callback(element)){
             var yes = element
-            newArray.push(element)
+            newArray.push(yes)
         }
     })
     return newArray
