@@ -7,9 +7,11 @@
 function forEach(array, callback){
     // YOUR CODE HERE
 
-    for(var i=0; i<array.length; i++)
-    callback(array[i])
+    for(var i=0; i<array.length; i++){
+    var el = array[i]
+    callback(el)
 
+    }
     // 
 }
 
@@ -77,10 +79,9 @@ function filter(array, callback){
     // YOUR CODE HERE
 
     var newArray = []
-    map(array, function(element){
+    forEach(array, function(element){
         if(callback(element)){
-            var yes = element
-            newArray.push(yes)
+            newArray.push(element)
         }
     })
     return newArray
